@@ -1,31 +1,176 @@
 <!doctype html>
-    <head>
-        <script type="javascript/text" src="./script.js"></script>
-        
-<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
-            <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-            <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
+<head>
 
-   </head>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
-   <body>
-<form action="SaveTheDate.html">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        body {
+            margin: 0;
+            position: "relative";
+        }
+
+
+        /* ---- particles.js container ---- */
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #b61924;
+            background-image: url("");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form action="SaveTheDate.html">
 
         <div class="slider-area hero-overly">
-                    <div class="row justify-content-center">
-                        <div class="col-xl-8 col-lg-9">
-                            <div class="hero__caption">
-                                <strong><span style= "color: black;">You are Tony and your hobbies are sleeping, eating, and playing video games, So basically you are a couch potato. One day while playing a mysterious video game online you came across a girl named Mona. You chatted with Mona for a while and she is just your ideal type. You asked her to go on a date with you and to your surprise, she said yes. She wants you to prepare dinner for her and she has a specific request, she wants to eat "Gotanydu" which is a special dish from Momoland and is prepared with special gotanydu frogs, for the dish you have to hunt down 13 frogs. You really want to impress this girl and don't want to lose this opportunity. You decided to hunt down these frogs and make the dish for her! </span><strong>
-                                
-                            </div>
-	      </div>
-	</div>
-</div>
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-9">
+                    <div class="hero__caption">
+                        <strong><span style="color: black;">You are Tony and your hobbies are sleeping, eating, and
+                                playing video games, So basically you are a couch potato. One day while playing a
+                                mysterious video game online you came across a girl named Mona. You chatted with Mona
+                                for a while and she is just your ideal type. You asked her to go on a date with you and
+                                to your surprise, she said yes. She wants you to prepare dinner for her and she has a
+                                specific request, she wants to eat "Gotanydu" which is a special dish from Momoland and
+                                is prepared with special gotanydu frogs, for the dish you have to hunt down 13 frogs.
+                                You really want to impress this girl and don't want to lose this opportunity. You
+                                decided to hunt down these frogs and make the dish for her! </span><strong>
+                                    <div id="particles-js"></div>
 
-<div align="center"><button type="submit" class="btn btn-primary">Let's Hunt</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div align="center"><button type="submit" class="btn btn-primary">Let's Hunt</button></div>
     </form>
-        
-    </body>
+
+
+    
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+
 </html>
